@@ -1,0 +1,23 @@
+.myList {
+  height: 100%;
+
+  :global{
+    .list-view-section-body{
+      display: flex !important;
+      width: 100%;
+      flex-direction: row;
+      flex-wrap: wrap;
+    }
+    .am-list-body {
+      background: rgba(0, 0, 0, 0);
+    }
+
+    .am-list-header {
+      padding:0 !important;
+    }
+    .am-list-footer {
+      padding: 0 !important;
+    }
+  }
+
+}

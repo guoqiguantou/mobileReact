@@ -1,0 +1,15 @@
+$width: 5em;
+.warp {
+  color:#999;
+  width: $width;
+  li{
+    list-style: none;
+  }
+  &:after{
+    content: '';
+    width:100px;
+    height:100px;
+    display: block;
+    background: yellow;
+  }
+}

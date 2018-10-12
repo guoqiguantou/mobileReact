@@ -1,0 +1,26 @@
+
+  
+  .tips{
+    color: #B5B5B5;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+    z-index: 99999;
+    height: 3em;
+    width: 100%;
+    text-align:center;
+  }
+  .btngroup{
+    :global{
+      .am-flexbox.am-flexbox-align-center .am-flexbox-item button{
+        transform:rotate(90deg);
+        -ms-transform:rotate(90deg); 	/* IE 9 */
+        -moz-transform:rotate(90deg); 	/* Firefox */
+        -webkit-transform:rotate(90deg); /* Safari 和 Chrome */
+        -o-transform:rotate(90deg);
+      }
+    }
+  }

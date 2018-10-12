@@ -1,0 +1,23 @@
+.btnstyle{
+    :global{
+        background-color: #fff;
+        width: 100%;
+        min-height:30px;
+        margin-top: 15px;
+        overflow: hidden;
+    .am-button{
+            height: 33px!important;
+            font-size: 16px;
+            margin-left: 13%;
+            line-height: 33px;
+            margin-top: 9px;
+          }
+          .agreebtn{
+           width: 30%;
+          }
+          .refusebtn{
+            width: 30%;
+          }
+    }
+  }
+

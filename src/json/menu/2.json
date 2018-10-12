@@ -1,0 +1,95 @@
+{
+  "list": [
+    {
+      "id": 75615,
+      "mainid": null,
+      "name": "",
+      "url": ""
+    },
+    {
+      "id": 75616,
+      "mainid": 75615,
+      "name": "青年之家",
+      "url": "",
+      "icontype": "home"
+    },
+    {
+      "id": 75623,
+      "mainid": 75616,
+      "name": "新建青年之家",
+      "url": "/manager/newly",
+      "icontype": ""
+    },
+    {
+      "id": 75624,
+      "mainid": 75616,
+      "name": "青年之家列表",
+      "url": "/manager/younghomelist",
+      "icontype": ""
+    },
+    {
+      "id": 75627,
+      "mainid": 75616,
+      "name": "青年之家地图",
+      "url": "/manager/map",
+      "icontype": ""
+    },
+    {
+      "id": 75617,
+      "mainid": 75615,
+      "name": "人才管理",
+      "url": "",
+      "icontype": "user"
+    },
+    {
+      "id": 75625,
+      "mainid": 75617,
+      "name": "新建人才档案",
+      "url": "",
+      "icontype": ""
+    },
+    {
+      "id": 75626,
+      "mainid": 75617,
+      "name": "人才档案列表",
+      "url": "/manager/talentadd",
+      "icontype": ""
+    },
+    {
+      "id": 75618,
+      "mainid": 75615,
+      "name": "通知公告",
+      "url": "",
+      "icontype": "line-chart"
+    },
+    {
+      "id": 75619,
+      "mainid": 75615,
+      "name": "信息管理",
+      "url": "",
+      "icontype": "usergroup-add"
+    },
+    {
+      "id": 75620,
+      "mainid": 75615,
+      "name": "综合查询",
+      "url": "",
+      "icontype": "search"
+    },
+    {
+      "id": 75621,
+      "mainid": 75615,
+      "name": "能力素质指标",
+      "url": "",
+      "icontype": "area-chart"
+    },
+    {
+      "id": 75622,
+      "mainid": 75615,
+      "name": "系统管理",
+      "url": "",
+      "icontype": "setting"
+    }
+  ],
+  "success": true
+}

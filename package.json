@@ -1,0 +1,38 @@
+{
+  "name": "create-react-app",
+  "version": "2.0.0",
+  "private": true,
+  "dependencies": {
+    "antd-mobile": "^2.1.6",
+    "immutable": "^3.8.2",
+    "locallyjs": "^0.3.3",
+    "react": "^15.6.1",
+    "react-dom": "^15.6.1",
+    "react-loadable": "^5.3.1",
+    "react-redux": "^5.0.7",
+    "react-scripts": "1.0.13",
+    "redux": "^4.0.0",
+    "superagent": "^4.0.0-beta.5",
+    "superagent-jsonp": "^0.2.1"
+  },
+  "scripts": {
+    "start": "react-app-rewired start",
+    "build": "react-app-rewired build",
+    "test": "react-app-rewired test --env=jsdom",
+    "eject": "react-scripts eject"
+  },
+  "devDependencies": {
+    "babel-plugin-import": "^1.2.0",
+    "less": "^2.7.3",
+    "less-loader": "^4.0.5",
+    "node-sass": "^4.9.3",
+    "postcss-scss": "^2.0.0",
+    "react-app-rewire-less": "^2.1.2",
+    "react-app-rewired": "^1.2.9",
+    "react-router-dom": "^4.3.1",
+    "redux-devtools": "^3.4.1",
+    "sass-loader": "^7.1.0",
+    "svg-sprite-loader": "^0.3.0"
+  },
+  "theme": "src/theme/theme.js"
+}

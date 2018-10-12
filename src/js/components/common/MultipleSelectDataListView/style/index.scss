@@ -1,0 +1,49 @@
+.myCard {
+  margin-top: .4rem;
+  border-bottom: .05rem solid #497497!important;
+
+  .cardContent {
+    font-size: .92rem;
+    line-height: 1.8rem;
+
+    .cardContentItem {
+      display: flex;
+      .itemIcon {
+        color: #e1da4b;
+        width: 1.2rem;
+      }
+      .itemTitle {
+        width: 5.6rem;
+      }
+      .itemContent {
+        flex: 1;
+      }
+    }
+  }
+}
+
+.bottomBtnLayout {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  display: none;
+  width: 100vw;
+  height: 44px;
+  z-index: 999;
+  background: #fff;
+
+  .bottomBtn {
+    width: 6rem;
+  }
+}
+
+.bottomBtnLayout.show {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 1rem;
+}
+
+.listContent {
+  height: 100%;
+}
