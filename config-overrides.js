@@ -14,7 +14,7 @@ module.exports = function override(config, env) {
         style: true, // use less for customized theme
     }], config);
 
-    // customize theme
+    //自定义主题
     config.module.rules[1].oneOf.unshift(
         {
             test: /\.less$/,

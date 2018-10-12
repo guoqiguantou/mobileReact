@@ -1,5 +1,6 @@
 import React from 'react';
 import {TabBar} from 'antd-mobile';
+import PropTypes from 'prop-types';
 import CustomIcon from '../../components/common/CustomIcon'//引入svg组件
 import FullScreenCon from '../../components/common/FullScreenCon'//引入全屏组件
 import Index from '../Index'
@@ -7,14 +8,29 @@ import Index from '../Index'
  * 入口文件
  */
 export default class HelloWorld extends React.Component {
+    static contextTypes = {
+        store: PropTypes.object
+    }
     constructor(props) {
         super(props);
         this.state = {
             selectedTab: 'page1',
+            themeColor: ''
         };
     }
+    componentWillMount () {
+        this._updateThemeColor();
 
+    }
+
+    _updateThemeColor () {
+        const { store } = this.context;
+        console.log(store);
+        const state = store.getState()
+        this.setState({ themeColor: state.themeColor })
+    }
     componentDidMount() {
+        console.log(this.state.themeColor);
        // console.log('logo',require('images/svg/menu1.svg') )
     }
     onTabChange(tabKey) {

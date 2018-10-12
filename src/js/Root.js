@@ -1,10 +1,12 @@
 import React from 'react';
 import {BrowserRouter as Router, Route, Switch} from "react-router-dom";
+import PropTypes from 'prop-types'
 import Loadable from 'react-loadable'
 import PageLoading from './components/common/PageLoading'
 import Entry from "./pages/Entry";
 import App from './components/service/App'
-
+import createStore from '../store'
+import themeReducer from '../reducer'
 //Hello
 const Hello = Loadable({
     loader: () => import('./pages/HelloWorld'/* webpackChunkName:"HelloWorld" */),
@@ -25,8 +27,19 @@ const PageTest= Loadable({
     loader: () => import('./pages/PageTest'/* webpackChunkName:"PageTest" */),
     loading: PageLoading
 });
-export default class Root extends React.Component {
 
+
+
+const store = createStore(themeReducer);
+console.log('root',store);
+export default class Root extends React.Component {
+    static childContextTypes = {
+        store: PropTypes.object
+    }
+
+    getChildContext () {
+        return { store }
+    }
 
     render() {
         return (
