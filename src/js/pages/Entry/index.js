@@ -25,7 +25,7 @@ export default class HelloWorld extends React.Component {
 
     _updateThemeColor () {
         const { store } = this.context;
-        console.log(store);
+        //console.log(store);
         const state = store.getState()
         this.setState({ themeColor: state.themeColor })
     }

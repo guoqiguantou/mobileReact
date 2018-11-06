@@ -3,7 +3,8 @@ import ajaxUtil from '../../utils/ajaxUtil';
 import PropTypes from 'prop-types';
 import {Link} from 'react-router-dom';
 import { Carousel, NavBar, Icon ,Button } from 'antd-mobile';
-
+import Login from '../Login'
+import Usual from '../Usual'
 export default class Index extends React.Component {
     static contextTypes = {
         themeColor: PropTypes.string
@@ -49,33 +50,9 @@ export default class Index extends React.Component {
                         <Icon key="1" type="ellipsis" />,
                     ]}
                 >NavBar</NavBar>
+                <Login></Login>
+                <Usual></Usual>
 
-
-                <Carousel
-                    autoplay={false}
-                    infinite
-                    beforeChange={(from, to) => console.log(`slide from ${from} to ${to}`)}
-                    afterChange={index => console.log('slide to', index)}
-                >
-                    {this.state.data.map(val => (
-                        <a
-                            key={val}
-                            href="http://www.alipay.com"
-                            style={{ display: 'inline-block', width: '100%', height: this.state.imgHeight }}
-                        >
-                            <img
-                                src={`https://zos.alipayobjects.com/rmsportal/${val}.png`}
-                                alt=""
-                                style={{ width: '100%', verticalAlign: 'top' }}
-                                onLoad={() => {
-                                    // fire window resize event to change height
-                                    window.dispatchEvent(new Event('resize'));
-                                    this.setState({ imgHeight: 'auto' });
-                                }}
-                            />
-                        </a>
-                    ))}
-                </Carousel>
 
                 <div>
 

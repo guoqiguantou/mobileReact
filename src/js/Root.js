@@ -31,7 +31,7 @@ const PageTest= Loadable({
 
 
 const store = createStore(themeReducer);
-console.log('root',store);
+//console.log('root',store);
 export default class Root extends React.Component {
     static childContextTypes = {
         store: PropTypes.object
